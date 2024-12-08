@@ -2325,7 +2325,7 @@ def recommend_display(new_df):
     st.markdown("<h2 class='title'>🎞️ Over 4000 movies and recommendations 🍿📽️📺🎧</h2>", unsafe_allow_html=True)
 
     if st.session_state["search_performed"] or st.session_state["selected_movie_name"]:
-        if st.button("⬅️ Home"):
+        if st.button("🏠 Return to Home"):
             st.session_state["selected_movie_name"] = None
             st.session_state["search_performed"] = False
             st.rerun()

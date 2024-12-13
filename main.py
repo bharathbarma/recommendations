@@ -2197,7 +2197,7 @@ import pandas as pd
 
 # Page configuration
 st.set_page_config(
-    page_title="Movie Recommender",
+    page_title="Film-Quest",
     layout="wide",  # Set layout to wide for full-page width
     page_icon="🎥",
     initial_sidebar_state="collapsed",  # Collapsed sidebar minimizes the sidebar
@@ -2321,7 +2321,7 @@ def fetch_top_rated_movies(new_df, num_movies=24):
 
 def recommend_display(new_df):
     """Display movie search, details of the selected movie, and recommendations."""
-    st.markdown("<h1 class='title'>🎥 Movie Recommender</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 class='title'>🎥 Film-Quest</h1>", unsafe_allow_html=True)
     st.markdown("<h2 class='title'>🎞️ Over 4000 movies and recommendations 🍿📽️📺🎧</h2>", unsafe_allow_html=True)
 
     if st.session_state["search_performed"] or st.session_state["selected_movie_name"]:
